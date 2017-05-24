@@ -47,14 +47,3 @@ Using the **Breadth-First Search** the traversal of the nodes which are marked a
 
 ## Steps for Execuition
 IDE - [IntelliJ IDEA CE](https://www.jetbrains.com/idea/download/#section=mac)
-
-
-
-
-
-
-
-
-
-
-
