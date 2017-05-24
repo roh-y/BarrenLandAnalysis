@@ -48,8 +48,6 @@ Using the **Breadth-First Search** the traversal of the nodes which are marked a
 ## Steps for Execuition
 IDE - [IntelliJ IDEA CE](https://www.jetbrains.com/idea/download/#section=mac)
 
-Download the code: 
-![https://www.jetbrains.com/idea/download/#section=mac](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 
 
