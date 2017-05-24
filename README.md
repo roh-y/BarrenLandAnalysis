@@ -1,5 +1,9 @@
 # BarrenLandAnalysis
 
+## Steps for Execuition
+IDE - [IntelliJ IDEA CE](https://www.jetbrains.com/idea/download/#section=mac)
+
+
 First things first, get to know about the BFS, here is a great video presented by an MIT Professor, understanding BFS makes this case study a simple task.
 [BFS By Erik Demaine](https://www.youtube.com/watch?v=s-CYnVz-uh4)
 
@@ -45,5 +49,3 @@ The output of this case will be two values i.e area of second row and area of fo
 ## Finding the Area of Fertile Land
 Using the **Breadth-First Search** the traversal of the nodes which are marked as zero is done and the area is found.
 
-## Steps for Execuition
-IDE - [IntelliJ IDEA CE](https://www.jetbrains.com/idea/download/#section=mac)
