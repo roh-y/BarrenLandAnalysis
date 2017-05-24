@@ -8,7 +8,7 @@ First things first, get to know about the BFS, here is a great video presented b
 [BFS By Erik Demaine](https://www.youtube.com/watch?v=s-CYnVz-uh4)
 
 ## Creating Fertile Land
-Let us consider the fertile land on a graph sheet, a graph sheet is an 2-D space with X and Y co-ordinates. Now, create an matrix which can point to all the nodes in the graph using an 2-D array. I have created the array ### **int[][] fieldMatrix**.
+Let us consider the fertile land on a graph sheet, a graph sheet is an 2-D space with X and Y co-ordinates. Now, create an matrix which can point to all the nodes in the graph using an 2-D array. I have created the array **int[][] fieldMatrix**.
 Default values in the matrix are 0, considered as the fertile field.
 
 |0|0|0|0|
