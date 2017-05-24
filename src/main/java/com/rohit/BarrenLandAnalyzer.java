@@ -12,7 +12,7 @@ public class BarrenLandAnalyzer {
 
     public int[][] fieldMatrix = new int[LENGTH][WIDTH];
     public List<Rectangle> barrenRectangles = new ArrayList<Rectangle>();
-    public HashMap<Integer, Integer> fertileAreaMap = new HashMap<Integer, Integer>(); //Used because of its over riding feature.
+    public HashMap<Integer, Integer> fertileAreaMap = new HashMap<Integer, Integer>(); 
     public LinkedList<int[]> queue = new LinkedList<int[]>();
 
     public int[] startNode =new int[]{0,0};
