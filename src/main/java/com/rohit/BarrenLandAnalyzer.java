@@ -104,20 +104,20 @@ public class BarrenLandAnalyzer {
         Scanner in = new Scanner(System.in);
         System.out.println("Please Enter the BarrenRectangles Input: \n");
         String input = in.nextLine();
-        String[] args = input.replaceAll("[{}]","").replaceAll("[\"]","").split(",");
-        parseInput(args);
+        String[] rectangleStrings = input.replaceAll("[{}]","").replaceAll("[\"]","").split(",");
+        parseInput(rectangleStrings);
 
     }
 
 
-    public void parseInput(String[] args) throws Exception {
+    public void parseInput(String[] rectangleStrings) throws Exception {
         Rectangle r;
-        if(args.length==0){
+        if(rectangleStrings.length==0){
             throw new Exception("Please pass some arguments");
         }
-        for (int i = 0; i < args.length; i++) {
-            validate(args[i]);
-            String[] array = args[i].split(" ");
+        for (int i = 0; i < rectangleStrings.length; i++) {
+            validate(rectangleStrings[i]);
+            String[] array = rectangleStrings[i].split(" ");
             int[] lowerLeftNode = {Integer.parseInt(array[0]), Integer.parseInt(array[1])};
             int[] upperRightNode = {Integer.parseInt(array[2]), Integer.parseInt(array[3])};
             r = new Rectangle(lowerLeftNode, upperRightNode);
@@ -154,7 +154,7 @@ public class BarrenLandAnalyzer {
             throw new Exception("Argument has/have invalid type(not Integer) :"+arg);
         }
         if(array.length==4){
-            if(Integer.parseInt(array[0])>Integer.parseInt(array[2])){
+            if(Integer.parseInt(array[0])>Integer.parseInt(array[2])){//
                 throw new Exception("x co-ordinates are wrongly aligned :"+arg);
             }
             if(Integer.parseInt(array[1])>Integer.parseInt(array[3])){
