@@ -20,7 +20,7 @@ Default values in the matrix are 0, considered as the fertile field.
 ### This is an sample matrix which is considered to be fertile land.
 
 ## Marking the Barren Land
-Second things second, user need to provide the co-ordinates of bottom left corner and top right corner of the barren land field which is in the form of rectangle, there can be multiple barren field inputs. All the rectangles of barren fields are stored in the **barrenRectangles**. So after knowing the co-ordinates of the barren fields the next thing I have done is marking the barren rectangles to 1.
+Second things second, user need to provide the co-ordinates of bottom left corner and top right corner of the barren land field which is in the form of rectangle, there can be multiple barren field inputs. All the rectangles of barren fields are stored in the **barrenRectangles**. So after knowing the co-ordinates of the barren fields the next thing I have done is marking the barren rectangles to x.
 
 Case1 :
 
@@ -31,7 +31,7 @@ Case1 :
 |x|x|0|0|
 |0|0|0|0|
 
-This is an sample matrix which is considered to be fertile land with one part of Barren Field which is marked as one.
+This is an sample matrix which is considered to be fertile land with one part of Barren Field which is marked as x.
 The output of this case will be a single value.
 
 Case 2 :
@@ -43,7 +43,7 @@ Case 2 :
 |0|0|0|0|
 |x|x|x|x|
 
-This is an sample matrix which is considered to be fertile land with two part of Barren Field which is marked as one and they are divided by the barren land.
+This is an sample matrix which is considered to be fertile land with two part of Fertile Field which is marked as 0 and they are divided by three barren lands marked as x.
 The output of this case will be two values i.e area of second row and area of fourth row.
 
 ## Finding the Area of Fertile Land
