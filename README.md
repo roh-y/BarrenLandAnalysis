@@ -24,11 +24,11 @@ Second things second, user need to provide the co-ordinates of bottom left corne
 
 Case1 :
 
-|1|1|0|0|
+|x|x|0|0|
 |-------------|-------------:| -----:|-----:|
-|1|1|0|0|
-|1|1|0|0|
-|1|1|0|0|
+|x|x|0|0|
+|x|x|0|0|
+|x|x|0|0|
 |0|0|0|0|
 
 This is an sample matrix which is considered to be fertile land with one part of Barren Field which is marked as one.
@@ -36,12 +36,12 @@ The output of this case will be a single value.
 
 Case 2 :
 
-|1|1|1|1|
+|x|x|x|x|
 |-------------|-------------:| -----:|-----:|
 |0|0|0|0|
-|1|1|1|1|
+|x|x|x|x|
 |0|0|0|0|
-|1|1|1|1|
+|x|x|x|x|
 
 This is an sample matrix which is considered to be fertile land with two part of Barren Field which is marked as one and they are divided by the barren land.
 The output of this case will be two values i.e area of second row and area of fourth row.
