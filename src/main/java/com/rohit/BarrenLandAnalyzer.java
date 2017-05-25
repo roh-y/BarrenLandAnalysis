@@ -12,7 +12,7 @@ public class BarrenLandAnalyzer {
 
     public int[][] fieldMatrix = new int[LENGTH][WIDTH];
     public List<Rectangle> barrenRectangles = new ArrayList<Rectangle>();
-    public HashMap<Integer, Integer> fertileAreaMap = new HashMap<Integer, Integer>(); //Used because of its over riding feature.
+    public HashMap<Integer, Integer> fertileAreaMap = new HashMap<Integer, Integer>(); 
     public LinkedList<int[]> queue = new LinkedList<int[]>();
 
     public int[] startNode =new int[]{0,0};
@@ -150,9 +150,7 @@ public class BarrenLandAnalyzer {
         if(array.length!=4){
             throw new Exception("Invalid no of arguments: "+arg);
         }
-        if(!containsAllIntegers(array)){
-            throw new Exception("Argument has/have invalid type(not Integer) :"+arg);
-        }
+
         if(array.length==4){
             if(Integer.parseInt(array[0])>Integer.parseInt(array[2])){//
                 throw new Exception("x co-ordinates are wrongly aligned :"+arg);
@@ -162,36 +160,6 @@ public class BarrenLandAnalyzer {
             }
         }
 
-    }
-
-
-    public static boolean containsAllIntegers(String[] integers){
-        //loop over the array; if any value isnt an integer return false.
-        for (String integer : integers){
-            if (!isInteger(integer)){
-                return false;
-            }
-        }
-        return true;
-    }
-
-    public static boolean isInteger(String s) {
-        try {
-            Integer.parseInt(s);
-        } catch(NumberFormatException e) {
-            return false;
-        }
-        // only got here if we didn't return false
-        return true;
-    }
-
-    public void printGrid() {
-        for (int i = 0; i < WIDTH; i++) {
-            for (int j = 0; j < LENGTH; j++) {
-                System.out.print(fieldMatrix[j][i] + "");
-            }
-            System.out.print("\n");
-        }
     }
 
 
