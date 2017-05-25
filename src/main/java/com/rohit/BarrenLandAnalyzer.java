@@ -31,7 +31,7 @@ public class BarrenLandAnalyzer {
     }
 
     //Calculates the FertileLands Area and returns a sorted list of areas.
-    private List<Integer> calculateFertileLandArea() {
+    public List<Integer> calculateFertileLandArea() {
         int fertileFieldId = 0;
         //Breadth-First Traversal Algorithm
         while (true) {
