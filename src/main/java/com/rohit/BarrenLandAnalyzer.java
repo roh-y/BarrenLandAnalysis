@@ -31,7 +31,7 @@ public class BarrenLandAnalyzer {
     }
 
     //Calculates the FertileLands Area and returns a sorted list of areas.
-    public List<Integer> calculateFertileLandArea() {
+    private List<Integer> calculateFertileLandArea() {
         int fertileFieldId = 0;
         //Breadth-First Traversal Algorithm
         while (true) {
@@ -55,7 +55,7 @@ public class BarrenLandAnalyzer {
         while(iterator.hasNext()){
             areas.add(iterator.next());
         }
-        Collections.sort(areas);
+        Collections.sort(areas);//Using static method on Collections to sort the list in ascending order.
         return areas;
 
     }
@@ -104,7 +104,7 @@ public class BarrenLandAnalyzer {
         Scanner in = new Scanner(System.in);
         System.out.println("Please Enter the BarrenRectangles Input: \n");
         String input = in.nextLine();
-        String[] rectangleStrings = input.replaceAll("[{}]","").replaceAll("[\"]","").split(",");
+        String[] rectangleStrings = input.replaceAll("[^0-9 ,]","").split(",");
         parseInput(rectangleStrings);
 
     }
@@ -192,6 +192,22 @@ public class BarrenLandAnalyzer {
             }
             System.out.print("\n");
         }
+    }
+
+
+    public void printFertileAreas() {
+        int i=0;
+        List<Integer> areas = calculateFertileLandArea();
+        System.out.print("{");
+        for(Integer area:areas){
+            if(i == areas.size()-1){
+                System.out.print("\""+area+"\"");
+            }else{
+                System.out.print("\""+area+"\""+",");
+            }
+            i++;
+        }
+        System.out.println("}");
     }
 
 }
