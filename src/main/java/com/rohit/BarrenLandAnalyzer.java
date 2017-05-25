@@ -117,9 +117,9 @@ public class BarrenLandAnalyzer {
         }
         for (int i = 0; i < rectangleStrings.length; i++) {
             validate(rectangleStrings[i]);
-            String[] array = rectangleStrings[i].split(" ");
-            int[] lowerLeftNode = {Integer.parseInt(array[0]), Integer.parseInt(array[1])};
-            int[] upperRightNode = {Integer.parseInt(array[2]), Integer.parseInt(array[3])};
+            String[] coordinates = rectangleStrings[i].split(" ");
+            int[] lowerLeftNode = {Integer.parseInt(coordinates[0]), Integer.parseInt(coordinates[1])};
+            int[] upperRightNode = {Integer.parseInt(coordinates[2]), Integer.parseInt(coordinates[3])};
             r = new Rectangle(lowerLeftNode, upperRightNode);
             barrenRectangles.add(r);
         }
