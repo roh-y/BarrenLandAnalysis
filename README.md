@@ -3,7 +3,7 @@
 ## Steps for Execuition
 IDE - [IntelliJ IDEA CE](https://www.jetbrains.com/idea/download/#section=mac)
 
-Download the zip file of the project, and import the project using the pom.xml
+Download the zip file, and import the project using the pom.xml
 
 Run the Main program in main->java->com.rohit->Main
 
