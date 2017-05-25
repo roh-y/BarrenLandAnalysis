@@ -2,6 +2,15 @@
 
 ## Steps for Execuition
 IDE - [IntelliJ IDEA CE](https://www.jetbrains.com/idea/download/#section=mac)
+Run the Main program in main->java->com.rohit->Main
+
+Please Enter the BarrenRectangles Input: 
+
+
+Sample Input: {“48 192 351 207”, “48 392 351 407”, “120 52 135 547”, “260 52 275 547”}
+
+
+Sample Output: 22816 192608 
 
 
 ## Creating Fertile Land
