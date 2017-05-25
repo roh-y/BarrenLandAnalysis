@@ -4,9 +4,6 @@
 IDE - [IntelliJ IDEA CE](https://www.jetbrains.com/idea/download/#section=mac)
 
 
-First things first, get to know about the BFS, here is a great video presented by an MIT Professor, understanding BFS makes this case study a simple task.
-[BFS By Erik Demaine](https://www.youtube.com/watch?v=s-CYnVz-uh4)
-
 ## Creating Fertile Land
 Let us consider the fertile land on a graph sheet, a graph sheet is an 2-D space with X and Y co-ordinates. Now, create an matrix which can point to all the nodes in the graph using an 2-D array. I have created the array **int[][] fieldMatrix**.
 Default values in the matrix are 0, considered as the fertile field.
@@ -48,4 +45,6 @@ The output of this case will be two values i.e area of second row and area of fo
 
 ## Finding the Area of Fertile Land
 Using the **Breadth-First Search** the traversal of the nodes which are marked as zero is done and the area is found.
+To know about the BFS, here is a great video presented by an MIT Professor, understanding BFS makes this case study a simple task.
+[BFS By Erik Demaine](https://www.youtube.com/watch?v=s-CYnVz-uh4)
 
