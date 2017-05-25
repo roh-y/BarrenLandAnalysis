@@ -29,7 +29,7 @@ Default values in the matrix are 0, considered as the fertile field.
 ### This is an sample matrix which is considered to be fertile land.
 
 ## Marking the Barren Land
-Second things second, user need to provide the co-ordinates of bottom left corner and top right corner of the barren land field which is in the form of rectangle, there can be multiple barren field inputs. All the rectangles of barren fields are stored in the **barrenRectangles**. So after knowing the co-ordinates of the barren fields the next thing I have done is marking the barren rectangles to x.
+Next, user need to provide the co-ordinates of bottom left corner and top right corner of the barren land field which is in the form of rectangle, there can be multiple barren field inputs. All the rectangles of barren fields are stored in the **barrenRectangles**. So after knowing the co-ordinates of the barren fields the next thing I have done is marking the barren rectangles to x.
 
 Case1 :
 
