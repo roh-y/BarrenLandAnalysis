@@ -10,7 +10,7 @@ public class Main {
         BarrenLandAnalyzer m = new BarrenLandAnalyzer();
         m.readInput();
         m.markBarrenLand();
-        m.printFertileAreas();//{“48 192 351 207”, “48 392 351 407”, “120 52 135 547”, “260 52 275 547”}
+        m.printFertileAreas();//{“48 192 351 207”,“48 392 351 407”,“120 52 135 547”,“260 52 275 547”}
 
     }
 
