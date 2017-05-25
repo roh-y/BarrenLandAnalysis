@@ -95,7 +95,7 @@ public class BarrenLandAnalyzer {
             fieldMatrix[x][y] = 1;//marking the fertileLand as covered.
             area = fertileAreaMap.get(fertileFieldId)+1;//increment the area by 1,every-time we traverse a fertile node.(gets the value and increments)
             fertileAreaMap.put(fertileFieldId, area);//save the FertileFieldId and its corresponding area //
-            //Here we are over riding the previous area associated with the FertilFieldId.
+            //Here we are over riding the previous area associated with the FertileFieldId.
         }
     }
 
@@ -164,18 +164,12 @@ public class BarrenLandAnalyzer {
 
 
     public void printFertileAreas() {
-        int i=0;
         List<Integer> areas = calculateFertileLandArea();
-        System.out.print("{");
+
         for(Integer area:areas){
-            if(i == areas.size()-1){
-                System.out.print("\""+area+"\"");
-            }else{
-                System.out.print("\""+area+"\""+",");
-            }
-            i++;
+            System.out.print(area+" ");
         }
-        System.out.println("}");
+
     }
 
 }
