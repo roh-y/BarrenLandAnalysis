@@ -23,7 +23,7 @@ public class BarrenLandAnalyzer {
                 if(fieldMatrix[i][j]==0){// Checking for the fertile node
                     startNode[0]=i;
                     startNode[1]=j;
-                    return true; // Returns true when there is a any node of fertile land which is not visited.
+                    return true; // Returns true when there is a node of fertile land which is not visited.
                 }
             }
         }
