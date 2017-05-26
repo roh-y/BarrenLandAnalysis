@@ -56,7 +56,7 @@ This is an sample matrix which is considered to be fertile land with two part of
 The output of this case will be two values i.e area of second row and area of fourth row.
 
 ## Finding the Area of Fertile Land
-Using the **Breadth-First Search** the traversal of the nodes which are marked as zero is done and the area is found.
+Using the **Breadth-First Traversal** the traversal of the nodes which are marked as zero is done and the area is found.
 To know about the BFS, here is a great video presented by an MIT Professor, understanding BFS makes this case study a simple task.
 [BFS By Erik Demaine](https://www.youtube.com/watch?v=s-CYnVz-uh4)
 
